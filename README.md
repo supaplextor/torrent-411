@@ -4,7 +4,7 @@ A dependency-free Go command-line tool that reads a `.torrent` file and prints
 its metadata in a human-readable report.
 
 ```sh
-go run inspect_webseeds.go file.torrent
+go run inspect_torrent.go file.torrent
 ```
 
 The report includes v1 and (when applicable) v2 info hashes, torrent name,
