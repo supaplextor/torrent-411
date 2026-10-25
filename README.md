@@ -1,4 +1,4 @@
-# go-my-webseed-lister
+# torrent-411
 
 A dependency-free Go command-line tool that reads a `.torrent` file and prints
 its metadata in a human-readable report.
