@@ -33,6 +33,23 @@ and v2 piece-layer/file-root metadata where present. The info hashes are
 computed from the original bencoded `info` dictionary, as required by the
 torrent formats.
 
+## Cross-platform build archives
+
+Use the provided Makefile to build for every GOOS/GOARCH target supported by
+your local Go toolchain and produce one ZIP file per target.
+
+```sh
+make package-all
+```
+
+Some targets may require external cross-compilers/cgo and cannot be built in a
+given environment. Those targets are reported and skipped. Windows `386` and
+`amd64` are required and the build fails if either does not compile.
+
+Artifacts are written to:
+
+- `dist/bin/` for compiled binaries
+- `dist/zip/` for per-target zip files (each zip includes the binary and `README.md`)
 ```
 supaplex@sky:~/usr/src/github-by-user/supaplextor$ torrent-411/torrent-411 torrent-411/bt-hybrid/debian-live-13.7.0-amd64-lxde.iso.67webseeds.torrent 
 Torrent: debian-live-13.7.0-amd64-lxde.iso
