@@ -6,7 +6,7 @@ its metadata in a human-readable report.
 ```sh
 go run inspect_torrent.go file.torrent
 (or)
-torrent-411 torrent-411/bt-hybrid/debian-live-13.7.0-amd64-lxde.iso.torrent
+torrent-411 bt-hybrid/debian-live-13.7.0-amd64-lxde.iso.torrent
 Torrent: debian-live-13.7.0-amd64-lxde.iso
 Info hash (v1/SHA-1): 78fb2a1b08069f2dd415302b7ab517bb82eb3619
 Created: 2026-09-12T11:35:50Z
