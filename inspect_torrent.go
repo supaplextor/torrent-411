@@ -423,7 +423,7 @@ func main() {
 		fmt.Fprintf(os.Stderr, "Usage: %s file.torrent\n", os.Args[0])
 		os.Exit(2)
 	}
-
+	fmt.Println("(C) 2026 LinuxTorrents.com")
 	data, err := os.ReadFile(os.Args[1])
 	if err != nil {
 		fmt.Fprintln(os.Stderr, "Read error:", err)
